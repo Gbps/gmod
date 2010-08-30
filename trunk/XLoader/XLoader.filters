@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="includes\ADE32.cpp" />
+    <ClCompile Include="includes\CDetour.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="includes\sigscan.cpp" />
+    <ClCompile Include="csimplescan.cpp" />
+    <ClCompile Include="includes\config.cpp">
+      <Filter>CSigscanDB</Filter>
+    </ClCompile>
+    <ClCompile Include="csigscandb.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\ADE32.h" />
+    <ClInclude Include="includes\CDetour.h" />
+    <ClInclude Include="includes\CDetourReq.h" />
+    <ClInclude Include="includes\codecaves.h" />
+    <ClInclude Include="includes\GMLuaModule.h" />
+    <ClInclude Include="includes\ILuaInterface.h" />
+    <ClInclude Include="includes\ILuaModuleManager.h" />
+    <ClInclude Include="includes\ILuaObject.h" />
+    <ClInclude Include="includes\ILuaShared.h" />
+    <ClInclude Include="includes\sigscan.h" />
+    <ClInclude Include="includes\vfnhook.h" />
+    <ClInclude Include="includes\detours1.5.h" />
+    <ClInclude Include="includes\detours2.1.h" />
+    <ClInclude Include="includes\LuaExt.h" />
+    <ClInclude Include="includes\GmodModuleConfig.h" />
+    <ClInclude Include="includes\csimplescan.h" />
+    <ClInclude Include="includes\config.h">
+      <Filter>CSigscanDB</Filter>
+    </ClInclude>
+    <ClInclude Include="csigscandb.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CSigscanDB">
+      <UniqueIdentifier>{2ec82f2c-a3f6-4eb5-b01d-73ce4d482acc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\LuaInterface">
+      <UniqueIdentifier>{c07a887c-c3bd-4342-9875-f5aadd910991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SigScan">
+      <UniqueIdentifier>{3d4d8aba-bc95-4b2e-ab8e-e1bd1fcbc884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VFNHook">
+      <UniqueIdentifier>{342680a2-3420-4432-bf6e-b62df407dcf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LuaExtensions">
+      <UniqueIdentifier>{bc8fa52f-c14a-4c67-83e1-fbb7d2538aba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BaseGmodModule">
+      <UniqueIdentifier>{0ad5fcda-e68e-47fe-a456-facc3f2c0745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SimpleClasses">
+      <UniqueIdentifier>{8ab92bae-b233-46cf-9c41-2a5c11a9c7f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Detours">
+      <UniqueIdentifier>{07baf631-4098-40cf-a45f-ad247f269912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Base64">
+      <UniqueIdentifier>{44bd5d35-a600-4bc4-8af5-96aeb6a01f6b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\sigscan.cpp">
+      <Filter>Header Files\SigScan</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\csimplescan.cpp">
+      <Filter>Header Files\SimpleClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\CDetour.cpp">
+      <Filter>Header Files\Detours</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\ADE32.cpp">
+      <Filter>Header Files\Detours</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\base64\base64.cpp">
+      <Filter>Header Files\Base64</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\GMLuaModule.h">
+      <Filter>Header Files\LuaInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ILuaInterface.h">
+      <Filter>Header Files\LuaInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ILuaModuleManager.h">
+      <Filter>Header Files\LuaInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ILuaObject.h">
+      <Filter>Header Files\LuaInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ILuaShared.h">
+      <Filter>Header Files\LuaInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\sigscan.h">
+      <Filter>Header Files\SigScan</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\vfnhook.h">
+      <Filter>Header Files\VFNHook</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\detours1.5.h">
+      <Filter>Header Files\Detours</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\detours2.1.h">
+      <Filter>Header Files\Detours</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\LuaExt.h">
+      <Filter>Header Files\LuaExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\GmodModuleConfig.h">
+      <Filter>Header Files\BaseGmodModule</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\csimplescan.h">
+      <Filter>Header Files\SimpleClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="RSAKey.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\base64\base64.h">
+      <Filter>Header Files\Base64</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
