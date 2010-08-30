@@ -1,0 +1,49 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:ADE32.cpp" caret="0" fromTop="0" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:ADE32.h" caret="0" fromTop="0" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:CDetour.cpp" caret="0" fromTop="0" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:CDetour.h" caret="0" fromTop="0" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:ILuaObject.h" caret="0" fromTop="0" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:ILuaInterface.h" caret="1059" fromTop="25" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4065" fromTop="13" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4367" fromTop="12" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4367" fromTop="12" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="6474" fromTop="29" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4367" fromTop="18" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4367" fromTop="18" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4367" fromTop="17" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4367" fromTop="22" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4367" fromTop="15" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4367" fromTop="16" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="5786" fromTop="24" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4367" fromTop="12" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4367" fromTop="21" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="5614" fromTop="18" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="5303" fromTop="17" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4507" fromTop="26" />
+      <File id="4D04951C-3CF1-4BA5-BFC8-290DC3BE37D9/f:main.cpp" caret="4367" fromTop="12" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
