@@ -36,6 +36,7 @@ public:
 	virtual void			unknown04();
 	virtual void			MountGameContent();
 	virtual void			blah02();
+	virtual void			blah03();
 	virtual void			MountAddons();
 	virtual void			LoadAddonLua();
 	virtual void			unknown05();
