@@ -75,7 +75,6 @@ void __stdcall MountLuaAdd_d(const char * sPath, const char* pathID){
 LUA_FUNCTION (ReloadAddonList){
 	int* AddonNumber = reinterpret_cast<int*>(((PBYTE)oILuaShared)+0x802C);
 	if (AddonNumber == NULL) { Warning("Addon number was 0 or NULL?\n"); return 0; }
-	Msg("Addon Number: %i\n",*AddonNumber);
 	(*AddonNumber) = 0; // Basically we're forcing the size to 0. Not a very good way of doing it tbh, but it works.
 						// It's probably a std::map, which means it will grow to the maximum size it needs.
 						// Even if there were old entries, it should overwrite them, so it shouldn't be too horribly bad :F
@@ -168,7 +167,6 @@ int Init(lua_State* L) {
 
 
 	PBYTE luaSharedCallAddr = (PBYTE)ScannerCl.FindPointer("\xE8\x48\xD8\xFF\xFF\x8B\x0D\x9C\xFD\x4D\x18\x83\x79\x14\x01\x8D\x4C\x24\x03\x51\x0F\x9F\xC2\x88\x54\x24\x08\x8B\x4C\x24\x08\x8B","x????xx????xxxxxxxxxxxxxxx?xxx?x");
-	DevMsg(" > Addonissimo : Lua Shared function found at %p\n",luaSharedCallAddr);
 	if (luaSharedCallAddr == NULL){
 		gLua->Error("*********************************************************\n");
 		gLua->Error("*     Vtable signature failed... Post about it!         *\n");
@@ -194,9 +192,7 @@ int Init(lua_State* L) {
 		tramp_ExecuteString = (ExecuteCmdString_t)cdetours.Create((PBYTE)pb_orig_ExecuteString, (PBYTE)&ExecuteCmdString_d, DETOUR_TYPE_JMP);
 	}
 
-	Msg("Add Search Path: %p\n",MountLuaAdd_a);
 	if (MountLuaAdd_a != NULL){
-		DevMsg(" > Addonissimo : Search Path Found At %p\n",MountLuaAdd_a);
 		MountLuaAdd_o = (MountLuaAdd_t)cdetours.Create((PBYTE)MountLuaAdd_a, (PBYTE)&MountLuaAdd_d, DETOUR_TYPE_JMP);
 	}else{
 		gLua->Msg("*********************************************************\n");
