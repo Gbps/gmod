@@ -52,7 +52,7 @@
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\sdk\public;C:\sdk\public\tier0;C:\sdk\public\tier1;C:\sdk\game\client;C:\sdk\game\server;C:\sdk\game\shared;$(IncludePath)</IncludePath>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\sdk\lib\public;$(LibraryPath)</LibraryPath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\sdk\common;C:\sdk\public;C:\sdk\public\tier0;C:\sdk\public\tier1;C:\sdk\game\client;C:\sdk\game\server;C:\sdk\game\shared;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\sdk\common;C:\sdk\public;C:\sdk\public\tier0;C:\sdk\public\tier1;C:\sdk\game\server;C:\sdk\game\shared;$(IncludePath)</IncludePath>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\sdk\lib\public;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -97,7 +97,7 @@
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <AdditionalIncludeDirectories>./includes/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GM_THREADSAFESOCKETS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GAME_DLL;WIN32;NDEBUG;_WINDOWS;_USRDLL;GM_THREADSAFESOCKETS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -126,8 +126,10 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="includes\sigscan.cpp" />
     <ClCompile Include="csimplescan.cpp" />
+    <ClCompile Include="net_stringcmd.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cnetmessage.h" />
     <ClInclude Include="includes\ADE32.h" />
     <ClInclude Include="includes\CDetour.h" />
     <ClInclude Include="includes\CDetourReq.h" />
@@ -145,6 +147,7 @@
     <ClInclude Include="includes\LuaExt.h" />
     <ClInclude Include="includes\GmodModuleConfig.h" />
     <ClInclude Include="includes\csimplescan.h" />
+    <ClInclude Include="net_stringcmd.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
